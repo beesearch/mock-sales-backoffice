@@ -1,11 +1,17 @@
-# Install SAP Mock
+# Install the SAP Mock
 
 ### Install sqlite3
-`brew install sqlite3`
+```
+brew install sqlite3
+```
 
 ### Install application
-`npm install`
-`npm install sqlite3`
+```
+npm install
+npm install sqlite3
+```
 
-# Start the server
+### Start the server
+```
 node server.js
+```
