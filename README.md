@@ -1,11 +1,11 @@
-# Install the SAP Mock
+# Install the mock data for SAP legacy
 
-### Install sqlite3
+### Sqlite3
 ```
 brew install sqlite3
 ```
 
-### Install application
+### Application
 ```
 npm install
 npm install sqlite3
