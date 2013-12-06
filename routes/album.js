@@ -1,3 +1,5 @@
+//[Album] ([AlbumId], [Title], [ArtistId])
+
 var sqlite3 = require("sqlite3").verbose();
 
 /*
@@ -12,7 +14,11 @@ var sqlite3 = require("sqlite3").verbose();
  	console.log("select all album");
  	db.all("SELECT AlbumId, Title, ArtistId FROM album", function(err, rows) {
  		rows.forEach(function (row) {
- 			album.push([{id: row.AlbumId, title: row.Title, artistId: row.ArtistId}]);
+ 			album.push([{
+ 				id: row.AlbumId, 
+ 				title: row.Title, 
+ 				artistId: row.ArtistId
+ 			}]);
  		});
 
  		res.send(album);
