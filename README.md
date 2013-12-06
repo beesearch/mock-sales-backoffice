@@ -23,4 +23,8 @@ node server.js
 
 // Get customer 
 http://localhost:3300/customers
+http://localhost:3300/albums
+http://localhost:3300/albumsWithArtistName
+http://localhost:3300/invoices
+http://localhost:3300/invoicesWithCustomerName
 ```
