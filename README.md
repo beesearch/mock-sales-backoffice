@@ -2,7 +2,13 @@
 
 ### Sqlite3
 ```
-brew install sqlite3
+Install Sqlite
+brew install Sqlite3 	//MAC OS X
+apt-get install sqlite3 //Ubuntu
+
+Setup the database
+sqlite3 sap.db
+sqlite3 sap.db < Chinook_Sqlite.sql
 ```
 
 ### Application
