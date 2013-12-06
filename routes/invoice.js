@@ -1,12 +1,10 @@
-//[Invoice] ([InvoiceId], [CustomerId], [InvoiceDate], [BillingAddress], [BillingCity], [BillingState], [BillingCountry], [BillingPostalCode], [Total])
-
 var sqlite3 = require("sqlite3").verbose();
 
 /*
- * GET users listing.
+ * GET all invoices.
  */
 
- exports.list = function(req, res){
+ exports.listAllInvoice = function(req, res){
  	var sqlite3 = require('sqlite3').verbose();
  	var db = new sqlite3.Database('db/sap.db');
  	var Invoice = []
@@ -33,5 +31,27 @@ var sqlite3 = require("sqlite3").verbose();
  	});
  };
 
+/*
+ * GET all invoices with customers infos.
+ */
 
- // SELECT invoiceid, FirstName, LastName FROM invoice, customer where invoice.customerid = customer.customerid;
+ exports.listAllInvoiceWithCustomerName = function(req, res){
+ 	var sqlite3 = require('sqlite3').verbose();
+ 	var db = new sqlite3.Database('db/sap.db');
+ 	var Invoice = []
+
+ 	console.log("select all InvoiceWithCustomerName");
+ 	db.all("SELECT Invoiceid, FirstName, LastName FROM invoice, customer where invoice.customerid = customer.customerid", function(err, rows) {
+ 		rows.forEach(function (row) {
+ 			Invoice.push([{
+ 				InvoiceId: row.InvoiceId, 
+ 				CustomerFirstName: row.FirstName, 
+ 				CustomerLastName: row.LastName
+ 			}]);
+ 		});
+
+ 		res.send(Invoice);
+
+ 		db.close();
+ 	});
+ };

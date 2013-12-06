@@ -1,12 +1,10 @@
-//[Customer] ([CustomerId], [FirstName], [LastName], [Address], [City], [Country], [PostalCode], [Phone], [Email], [SupportRepId])
-
 var sqlite3 = require("sqlite3").verbose();
 
 /*
- * GET users listing.
+ * GET all customer listing.
  */
 
- exports.list = function(req, res){
+ exports.listAllCustomer = function(req, res){
  	var sqlite3 = require('sqlite3').verbose();
  	var db = new sqlite3.Database('db/sap.db');
  	var customer = []

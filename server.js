@@ -1,4 +1,3 @@
-
 /**
  * Module dependencies.
  */
@@ -18,9 +17,13 @@ app.use(app.router);
 
 
 // routes
-app.get('/customers', customer.list);
-app.get('/albums', album.list);
-app.get('/invoices', invoice.list);
+app.get('/customers', customer.listAllCustomer);
+
+app.get('/albums', album.listAllAlbum);
+app.get('/albumsWithArtistName', album.listAllAlbumWithArtistName);
+
+app.get('/invoices', invoice.listAllInvoice);
+app.get('/invoicesWithCustomerName', invoice.listAllInvoiceWithCustomerName);
 
 
 http.createServer(app).listen(app.get('port'), function(){
