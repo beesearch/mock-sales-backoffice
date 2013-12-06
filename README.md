@@ -1,4 +1,4 @@
-# Install the mock data for SAP legacy
+# Install the SAP legacy mock data for bee-backend
 
 ### Sqlite3
 ```
