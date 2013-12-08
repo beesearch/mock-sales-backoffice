@@ -1,4 +1,4 @@
-# Install the SAP legacy mock data for bee-backend
+# Install the Sales backoffice mock data for bee-backend
 
 ### Sqlite3
 ```
@@ -6,9 +6,10 @@
 brew install Sqlite3 	//MAC OS X
 apt-get install sqlite3 //Ubuntu
 
-// Setup the database
-sqlite3 sap.db
-sqlite3 sap.db < Chinook_Sqlite.sql
+// Use the database
+sqlite3 sales.db
+// Reset the database
+sqlite3 sales.db < sales.sql
 ```
 
 ### Application
