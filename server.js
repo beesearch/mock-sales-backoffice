@@ -21,6 +21,7 @@ app.get('/customers', customer.listAllCustomer);
 
 app.get('/albums', album.listAllAlbum);
 app.get('/albumsWithArtistName', album.listAllAlbumWithArtistName);
+app.get('/updateAlbum', album.updateAlbum);
 
 app.get('/invoices', invoice.listAllInvoice);
 app.get('/invoicesWithCustomerName', invoice.listAllInvoiceWithCustomerName);
