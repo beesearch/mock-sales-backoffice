@@ -32,7 +32,7 @@ var https = require('https');
 
  exports.listAllAlbumWithArtistName = function(req, res){
  	var sqlite3 = require('sqlite3').verbose();
- 	var db = new sqlite3.Database('db/sap.db');
+ 	var db = new sqlite3.Database('db/sales.db');
  	var album = []
 
  	console.log("select all album");

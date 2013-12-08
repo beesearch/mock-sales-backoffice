@@ -37,7 +37,7 @@ var sqlite3 = require("sqlite3").verbose();
 
  exports.listAllInvoiceWithCustomerName = function(req, res){
  	var sqlite3 = require('sqlite3').verbose();
- 	var db = new sqlite3.Database('db/sap.db');
+ 	var db = new sqlite3.Database('db/sales.db');
  	var Invoice = []
 
  	console.log("select all InvoiceWithCustomerName");
