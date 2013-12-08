@@ -1,4 +1,4 @@
-# Install the Sales backoffice mock data for bee-backend
+#  Sales backoffice mock data for bee-backend
 
 ### Sqlite3
 ```
