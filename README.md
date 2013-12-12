@@ -1,4 +1,5 @@
-#  Sales backoffice mock data for bee-backend
+#  Sales backoffice 
+### Mock data for bee-backend
 
 ### Sqlite3
 ```
@@ -21,11 +22,4 @@ npm install sqlite3
 ### Start the server
 ```
 node server.js
-
-// Get customer 
-http://localhost:3300/customers
-http://localhost:3300/albums
-http://localhost:3300/albumsWithArtistName
-http://localhost:3300/invoices
-http://localhost:3300/invoicesWithCustomerName
 ```
