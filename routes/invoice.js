@@ -47,8 +47,6 @@ exports.listAllInvoice = {
 	}
 };
 
-
-
 exports.listAllInvoiceWithCustomerName = {
 	'spec': {
 		"description" : "Operations about invoice",

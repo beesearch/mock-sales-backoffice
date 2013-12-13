@@ -28,9 +28,11 @@ swagger.addValidator(
 
 // Add models and methods to swagger
 //var models = require("./models/album.js");
-var album = require('./routes/invoice');
-swagger.addGet(album.listAllInvoice)
-	.addGet(album.listAllInvoiceWithCustomerName); 
+var invoice = require('./routes/invoice');
+var customer = require('./routes/customer');
+swagger.addGet(invoice.listAllInvoice)
+  .addGet(invoice.listAllInvoiceWithCustomerName)
+	.addGet(customer.listAllCustomer); 
 
 // Configures the app's base path and api version.
 swagger.configure("http://localhost:3301", "0.1");
