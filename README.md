@@ -1,5 +1,16 @@
 #  Sales backoffice 
-### Mock data for bee-backend
+#### Mock data for bee-backend
+
+### Install the mock
+```
+npm install
+npm install sqlite3
+```
+
+### Start the server
+```
+node server.js
+```
 
 ### Sqlite3
 ```
@@ -12,15 +23,3 @@ sqlite3 sales.db
 // Reset the database
 sqlite3 sales.db < sales.sql
 ```
-
-### Application
-```
-npm install
-npm install sqlite3
-```
-
-### Start the server
-```
-node server.js
-```
-
