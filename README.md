@@ -22,7 +22,5 @@ apt-get install sqlite3 //Ubuntu
 Use the database
 ```
 sqlite3 sales.db
-
-//Reset the database
 sqlite3 sales.db < sales.sql
 ```
