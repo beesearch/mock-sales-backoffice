@@ -13,11 +13,11 @@ node server.js
 ```
 
 ### Sqlite3
-```
 Install Sqlite
 ```
 brew install Sqlite3 	//MAC OS X
 apt-get install sqlite3 //Ubuntu
+```
 
 Use the database
 ```
