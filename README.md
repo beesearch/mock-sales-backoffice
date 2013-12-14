@@ -24,3 +24,5 @@ Use the database
 sqlite3 sales.db
 sqlite3 sales.db < sales.sql
 ```
+
+You can browse our API with the [Hive Control Center](https://github.com/beesearch/H2C)
